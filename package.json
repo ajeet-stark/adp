@@ -1,0 +1,34 @@
+{
+  "name": "adp-connection",
+  "version": "2.0.0",
+  "description": "ADP Connection Library",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "NODE_DEBUG=adp-connection NODE_ENV=TEST istanbul cover _mocha; cp coverage/lcov-report/index.html test/coverage.html",
+    "test": "NODE_ENV=TEST mocha",
+    "lint": "eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:adplabs/adp-connection-node.git"
+  },
+  "author": "ADP Marketplace",
+  "license": "ISC",
+  "dependencies": {
+    "adp-core": "^1.0.0",
+    "config": "^1.19.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.3.7",
+    "node-uuid": "^1.4.7",
+    "request": "^2.67.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "restler": "^3.4.0",
+    "valid-url": "^1.0.9"
+  }
+}
